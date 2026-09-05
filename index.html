@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Drama Analytics™ | Advanced Emotional Intelligence for Root Vegetables</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ambient Cyberpunk Background -->
+    <div class="cyber-bg-overlay"></div>
+    <div class="cyber-grid"></div>
+    <canvas id="ambientCanvas"></canvas>
+
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="logo-badge">
+                    <span class="spud-icon">🥔</span>
+                    <span class="spud-pulse-ring"></span>
+                </div>
+                <div class="title-group">
+                    <h1 class="logo-title">POTATO DRAMA ANALYTICS<span class="tm">™</span></h1>
+                    <p class="tagline">Advanced Emotional Intelligence & Trauma Telemetry for Root Vegetables</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span class="status-text">SYSTEM: OPERATIONAL <span class="version">(v4.2 DRAMA-ENGINE)</span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            
+            <!-- SECTION 1: UPLOAD ZONE -->
+            <section id="uploadSection" class="upload-section">
+                <div class="cyber-card hero-dropzone-card">
+                    <!-- Scanner Corner Reticles -->
+                    <div class="reticle top-left"></div>
+                    <div class="reticle top-right"></div>
+                    <div class="reticle bottom-left"></div>
+                    <div class="reticle bottom-right"></div>
+
+                    <!-- Dropzone Area -->
+                    <div id="dropzone" class="dropzone">
+                        <div class="scanner-beam"></div>
+                        <div class="upload-icon-container">
+                            <svg class="radar-svg" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="radar-circle-outer"/>
+                                <circle cx="50" cy="50" r="30" class="radar-circle-mid"/>
+                                <circle cx="50" cy="50" r="15" class="radar-circle-inner"/>
+                                <line x1="50" y1="5" x2="50" y2="95" class="radar-crosshair"/>
+                                <line x1="5" y1="50" x2="95" y2="50" class="radar-crosshair"/>
+                                <polygon points="50,50 85,25 70,10" class="radar-sweep"/>
+                            </svg>
+                        </div>
+                        <h2 class="drop-title">DROP POTATO VAULT IMAGE HERE</h2>
+                        <p class="drop-subtitle">or click to browse high-resolution spud diagnostic photographs (.jpg, .png, .webp)</p>
+
+                        <input type="file" id="fileInput" accept="image/*" class="file-input-hidden">
+
+                        <div class="upload-actions">
+                            <button id="btnScan" class="cyber-btn primary-btn">
+                                <span class="btn-glitch"></span>
+                                <span class="btn-icon">⚡</span>
+                                <span class="btn-text">INITIALIZE DRAMA SCAN</span>
+                            </button>
+                            <button id="btnSample" class="cyber-btn secondary-btn">
+                                <span class="btn-icon">🧪</span>
+                                <span class="btn-text">TRY SAMPLE SPUDS</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: RESULTS DASHBOARD (Hidden initially) -->
+            <section id="resultsSection" class="results-section hidden">
+                <!-- TOP CROWNED HERO BANNER -->
+                <div id="winnerBanner" class="crowned-banner cyber-card">
+                    <div class="crown-glow"></div>
+                    <div class="winner-badge">🥇 CROWNED: MOST TRAUMATIZED SPUD</div>
+                    <div class="winner-content">
+                        <div class="winner-details">
+                            <span class="winner-id" id="winnerId">POTATO #4</span>
+                            <h2 class="winner-title" id="winnerTitle">"THE TRAGIC HERO"</h2>
+                            <p class="winner-quote">AI Verdict: <span id="winnerQuoteText">"This spud has witnessed spatial distortions and peeling pressures no tuber should ever endure."</span></p>
+                        </div>
+                        <div class="winner-score-box">
+                            <span class="score-label">DRAMA SCORE™</span>
+                            <span class="score-value" id="winnerScore">96.8%</span>
+                            <span class="trauma-index">TRAUMA RATING: CRITICAL CRUSH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN WORKSPACE SPLIT: IMAGE CANVAS & DOSSIER GRID -->
+                <div class="dashboard-split">
+                    <!-- LEFT: INTERACTIVE CANVAS WITH RETICLES -->
+                    <div class="photo-viewer-card cyber-card">
+                        <div class="card-header-bar">
+                            <span class="bar-title">🎯 SPUD RETICLE MAPPER & ISOLATOR</span>
+                            <span class="bar-tag">CANVAS TELEMETRY v4.2</span>
+                        </div>
+                        <div class="canvas-wrapper" id="canvasWrapper">
+                            <img id="uploadedImage" class="source-img" alt="Uploaded Potato Vault">
+                            <svg id="reticleOverlay" class="reticle-svg-overlay"></svg>
+                            <div class="canvas-scanline"></div>
+                        </div>
+                        <div class="canvas-instructions">
+                            💡 Hover or click target reticles to inspect individual spud trauma profiles below.
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: STATS & SUMMARY QUICK TELEMETRY -->
+                    <div class="quick-summary-card cyber-card">
+                        <div class="card-header-bar">
+                            <span class="bar-title">📊 FIELD TELEMETRY SUMMARY</span>
+                        </div>
+                        <div class="summary-stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-num" id="statDetectedCount">4</span>
+                                <span class="stat-lbl">SPUDS DETECTED</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num" id="statAvgDrama">67.3%</span>
+                                <span class="stat-lbl">AVG DRAMA SCORE</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num" id="statTraumaLevel">HIGH</span>
+                                <span class="stat-lbl">TRIBUNAL ALERT</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num">99.9%</span>
+                                <span class="stat-lbl">NEURAL CONFIDENCE</span>
+                            </div>
+                        </div>
+                        <button id="btnRescan" class="cyber-btn small-btn">
+                            <span>🔄 SCAN NEW SPUD VAULT</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SPUDS LEADERBOARD DOSSIER GRID -->
+                <div class="section-divider">
+                    <h3 class="section-title">🏆 SPUD DOSSIER LEADERBOARD</h3>
+                    <span class="divider-line"></span>
+                </div>
+
+                <div id="spudGrid" class="spud-dossier-grid">
+                    <!-- Cards will be populated dynamically -->
+                </div>
+
+                <!-- SECTION 3: POTATO COURT COMPARE MODE -->
+                <div class="section-divider">
+                    <h3 class="section-title">⚖️ POTATO COURT™ COMPARE ARENA</h3>
+                    <span class="divider-line"></span>
+                </div>
+
+                <div class="cyber-card court-arena-card">
+                    <div class="court-header">
+                        <h2>THE ROOT VEGETABLE TRIBUNAL</h2>
+                        <p>Pit two spuds head-to-head to adjudicate trauma priority and emotional distress.</p>
+                    </div>
+
+                    <div class="court-split">
+                        <!-- SPUD A -->
+                        <div class="court-fighter fighter-a">
+                            <label for="selectSpudA">SELECT PLAINTIFF (SPUD A)</label>
+                            <select id="selectSpudA" class="cyber-select"></select>
+                            <div id="fighterACard" class="fighter-display-card"></div>
+                        </div>
+
+                        <div class="versus-divider">
+                            <div class="vs-circle">VS</div>
+                            <button id="btnAdjudicate" class="cyber-btn court-gavel-btn">
+                                🔨 RUN TRIAL
+                            </button>
+                        </div>
+
+                        <!-- SPUD B -->
+                        <div class="court-fighter fighter-b">
+                            <label for="selectSpudB">SELECT DEFENDANT (SPUD B)</label>
+                            <select id="selectSpudB" class="cyber-select"></select>
+                            <div id="fighterBCard" class="fighter-display-card"></div>
+                        </div>
+                    </div>
+
+                    <!-- VERDICT BOX -->
+                    <div id="verdictBox" class="verdict-display-box hidden">
+                        <div class="gavel-anim">🔨</div>
+                        <div class="verdict-text-content">
+                            <span class="verdict-title">OFFICIAL COURT VERDICT</span>
+                            <h3 id="verdictWinnerText" class="verdict-winner">POTATO #4 WINS THE DRAMA DEBATE</h3>
+                            <p id="verdictReason" class="verdict-reason">"Potato #4 exhibits +24.2% higher surface laplacian complexity and severe existential eye distension."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- DRAMATIC ANALYSIS MODAL / RADAR LOADER -->
+    <div id="analysisModal" class="modal-overlay hidden">
+        <div class="modal-content cyber-card">
+            <div class="modal-header">
+                <span class="pulse-indicator"></span>
+                <span class="modal-title">AI DRAMA ENGINE v4.2 IN PROGRESS</span>
+            </div>
+            
+            <div class="radar-scan-container">
+                <div class="radar-outer-ring">
+                    <div class="radar-sweep-line"></div>
+                    <div class="radar-ping"></div>
+                    <div class="radar-center-dot"></div>
+                </div>
+                <div class="radar-readout">
+                    <span id="radarProgressPercent" class="radar-percent">0%</span>
+                    <span class="radar-status-lbl">CALCULATING EMOTIONAL DISTRESS</span>
+                </div>
+            </div>
+
+            <!-- TERMINAL LOG SCROLLER -->
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <span>TELEMETRY CONSOLE</span>
+                    <span class="term-dots">● ● ●</span>
+                </div>
+                <pre id="terminalLog" class="terminal-body"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
