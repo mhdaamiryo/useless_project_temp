@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button-1';
 import { Badge } from '@/components/ui/badge-2';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import PotatoKudumbaUnitLogo from '@/components/logo';
-import { ArrowLeft, Scale, Play, Pause, Trophy, Sparkles } from 'lucide-react';
+import QuantumPortalTransition from '@/components/quantum-portal-transition';
+import { ArrowLeft, Scale, Play, Pause, Trophy, Sparkles, Gavel, Zap } from 'lucide-react';
 
 interface PotatoData {
   id: number;
@@ -69,10 +71,12 @@ const DEFAULT_POTATOES: PotatoData[] = [
 ];
 
 export default function ResultsPage() {
+  const router = useRouter();
   const [potatoes, setPotatoes] = useState<PotatoData[]>(DEFAULT_POTATOES);
   const [userImageUrl, setUserImageUrl] = useState<string | null>(null);
   const [activeId, setActiveId] = useState<number>(4);
   const [isAutoplay, setIsAutoplay] = useState<boolean>(true);
+  const [isWarpingToCourt, setIsWarpingToCourt] = useState<boolean>(false);
 
   useEffect(() => {
     const storedData = sessionStorage.getItem('spud_analysis_data');
@@ -313,20 +317,33 @@ export default function ResultsPage() {
         </div>
       </div>
 
+      {/* Futuristic Quantum Portal Transition Screen */}
+      <QuantumPortalTransition
+        isTransitioning={isWarpingToCourt}
+        spudCount={potatoes.length}
+        onComplete={() => router.push('/court')}
+      />
+
       {/* Courtroom Route Trigger Banner */}
-      <div className="bg-gradient-to-r from-amber-700 via-amber-800 to-amber-900 rounded-3xl p-8 text-white shadow-xl text-center space-y-4 border-4 border-amber-600/40">
-        <h3 className="text-2xl sm:text-3xl font-black">
-          Court of Potato Justice ⚖️
+      <div className="bg-gradient-to-r from-amber-700 via-amber-800 to-amber-900 rounded-3xl p-8 text-white shadow-xl text-center space-y-4 border-4 border-amber-600/40 relative overflow-hidden group">
+        <div className="absolute inset-0 bg-amber-400/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+        
+        <h3 className="text-2xl sm:text-3xl font-black flex items-center justify-center gap-2">
+          <span>Court of Potato Justice</span>
+          <Gavel className="w-7 h-7 text-amber-300 animate-bounce" />
         </h3>
         <p className="text-amber-200 text-sm max-w-xl mx-auto font-medium">
-          Pit your dynamically cropped spuds head-to-head in an interactive courtroom trial.
+          Pit your dynamically cropped spuds head-to-head in an interactive courtroom trial via Quantum Warp Teleportation.
         </p>
         <div>
-          <Link href="/court">
-            <Button size="lg" className="bg-amber-400 hover:bg-amber-300 text-amber-950 font-black px-8 py-3 rounded-2xl text-base shadow-lg border-2 border-amber-200">
-              ⚖️ Enter Courtroom Scene
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            onClick={() => setIsWarpingToCourt(true)}
+            className="bg-amber-400 hover:bg-amber-300 text-amber-950 font-black px-8 py-4 rounded-2xl text-base shadow-xl border-2 border-amber-200 gap-2 transition-all transform hover:scale-105 active:scale-95"
+          >
+            <Zap className="w-5 h-5 text-amber-900 fill-amber-900 animate-pulse" />
+            <span>ENGAGE QUANTUM WARP TO COURTROOM</span>
+          </Button>
         </div>
       </div>
     </div>
