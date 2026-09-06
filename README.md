@@ -249,9 +249,6 @@ The demo demonstrates the complete workflow:
 - Feature refinement
 - Documentation and presentation support
 
-> Update these contribution descriptions to match the actual work done by each member.
-
----
 
 # 🥔 Why Potato?
 
