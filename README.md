@@ -141,7 +141,8 @@ npm run dev
 
 ### 3. Potato Photo Upload
 
-![Uploading Screenshot 2026-09-06 064807.png…]()
+<img width="1878" height="880" alt="Screenshot 2026-09-06 064807" src="https://github.com/user-attachments/assets/ee3a6fe9-0e1d-4aec-91d2-e80ca773f9d4" />
+
 
 
 **Caption:** The upload interface allows users to submit a potato photo or use a sample image before running the Spud Drama analysis.
