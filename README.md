@@ -12,12 +12,9 @@
 
 ### Team Members
 
-- **Team Lead:** Muhammed Aamir
+- **Team Lead:** Muhammed Aamir - [Viswajyothi College of Engineering and Technology]
 - **Member 2:** Anton P George
 
-> College names can be added here if required by the submission format.
-
----
 
 ## 📌 Project Description
 
@@ -108,15 +105,13 @@ For the source-code version, install the project's dependencies using the packag
 
 Example:
 
-```bash
-npm install
-```
+npm install`
 
 ### Run
 
-```bash
+
 npm run dev
-```
+
 
 > Replace these commands if your final GitHub project uses a different setup.
 
@@ -227,7 +222,7 @@ Even after everything life has thrown at it, Potato #5 is apparently doing fine.
 # 🎬 Project Demo Video
 
 **Demo Video:**  
-`[Add your demo video link here]`
+https://drive.google.com/file/d/1xvKmEY8L5vX7T7ukDSxbRJzYqoqYpzVa/view?usp=sharing
 
 The demo demonstrates the complete workflow:
 
@@ -235,15 +230,7 @@ The demo demonstrates the complete workflow:
 
 ---
 
-# ➕ Additional Demos
-
-- Live/deployed project: `[Add link]`
-- GitHub repository: `[Add repository link]`
-- Demo presentation: `[Add link if available]`
-
----
-
-# 👥 Team Contributions
+## 👥 Team Contributions
 
 ### Muhammed Aamir
 - Project concept and overall direction
