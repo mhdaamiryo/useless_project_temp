@@ -123,7 +123,8 @@ npm run dev
 
 ### 1. Potato Kudumba Unit — Home Page
 
-![Potato Kudumba Unit Home Page](screenshot-home.jpg)
+<img width="1836" height="877" alt="Screenshot 2026-09-06 063555" src="https://github.com/user-attachments/assets/9e8516de-c641-48ec-b590-8e37fe3036fd" />
+
 
 **Caption:** The main dashboard introduces the Potato Kudumba Unit and provides options to upload a potato photo or view the potato leaderboard.
 
@@ -131,7 +132,8 @@ npm run dev
 
 ### 2. Spud Drama Analysis Dashboard
 
-![Potato Drama Analysis Dashboard](screenshot-analysis.jpg)
+<img width="1887" height="892" alt="Screenshot 2026-09-06 064737" src="https://github.com/user-attachments/assets/dfde4c65-c45b-4e3a-9ee3-5fa0bc2b3541" />
+
 
 **Caption:** The analysis dashboard displays detected potatoes, individual trauma profiles, dramatic personalities, feature scores, and the overall Drama Score™.
 
@@ -139,7 +141,8 @@ npm run dev
 
 ### 3. Potato Photo Upload
 
-![Potato Photo Upload Interface](screenshot-upload.jpg)
+![Uploading Screenshot 2026-09-06 064807.png…]()
+
 
 **Caption:** The upload interface allows users to submit a potato photo or use a sample image before running the Spud Drama analysis.
 
