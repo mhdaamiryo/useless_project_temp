@@ -1,102 +1,290 @@
-<img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
+# Potato Kudumba Unit 🥔🎭
 
+### The Official Root Vegetable Trauma Registry
 
-
-# [Project Name] 🎯
-
-
-## Basic Details
-### Team Name: [Name]
-
-
-### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
-
-### Project Description
-[2-3 lines about what your project does]
-
-### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
-
-### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
-
-## Technical Details
-### Technologies/Components Used
-For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
-
-### Project Documentation
-For Software:
-
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+> **Determining which potato in your kitchen has suffered the most emotional and geometric trauma using high-precision computer vision.**
 
 ---
-Made with ❤️ at TinkerHub Useless Projects 
 
-![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
-![Static Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)
+## 🎯 Basic Details
 
+**Team Name:** FlyInGo
 
+### Team Members
+
+- **Team Lead:** Muhammed Aamir
+- **Member 2:** Anton P George
+
+> College names can be added here if required by the submission format.
+
+---
+
+## 📌 Project Description
+
+**Potato Kudumba Unit** is an AI-powered potato drama analysis system that examines photos of potatoes and decides which spud has experienced the most *emotional and geometric trauma*.
+
+Instead of simply recognizing a potato, the system gives every potato a personality, a dramatic title, visual characteristics, and a **Drama Score™** — because apparently potatoes deserve performance reviews too.
+
+---
+
+## 🤡 The Problem (that doesn't exist)
+
+Every kitchen has that **one potato**.
+
+The potato that has been sitting in the corner for too long.
+
+The potato with questionable bumps.
+
+The potato that looks like it has seen things.
+
+But how do we know **which potato has suffered the most?**
+
+Until now, humanity had no scientifically questionable method for answering this extremely important question.
+
+### The world's biggest unanswered questions:
+
+- Which potato is the **Tragic Hero**?
+- Which one is **Quietly Unraveling**?
+- Which potato has the most suspicious geometry?
+- Which spud has the roughest surface?
+- And most importantly...
+
+> **WHO HAS SUFFERED THE MOST? 🥔**
+
+---
+
+## 🧠 The Solution (that nobody asked for)
+
+Potato Kudumba Unit analyzes a potato photo and generates a ridiculous but data-driven **Spud Trauma Profile**.
+
+The system:
+
+1. 📸 Accepts a photo containing one or more potatoes.
+2. 🔍 Detects individual potatoes in the image.
+3. 📐 Examines potato shape and geometric irregularities.
+4. 🪨 Estimates surface roughness.
+5. 👁️ Measures visual uniqueness.
+6. 🎭 Assigns a dramatic personality/title.
+7. 🏆 Calculates a **Drama Score™**.
+8. 📊 Ranks all detected potatoes on the leaderboard.
+
+The result?
+
+A completely unnecessary **AI-powered potato family court**.
+
+---
+
+# 🛠️ Technical Details
+
+## Technologies / Components Used
+
+### For Software
+
+- **Computer Vision:** HTML5-based pixel/image analysis
+- **Image Processing:** Pixel-level potato detection and shape/contour analysis
+- **Analysis:** Geometric feature extraction and visual scoring
+- **UI:** Interactive web interface
+- **AI Layer:** Potato Drama Analysis Engine v4.2
+- **Development Platform:** Lovable
+- **Frontend / Framework / Libraries:** Add the exact libraries used by the final implementation here if required by the event
+
+### For Hardware
+
+**No dedicated hardware required.**
+
+The project runs as a software/web application using a camera or an uploaded potato image.
+
+---
+
+# ⚙️ Implementation
+
+## For Software
+
+### Installation
+
+If the project is being run from the deployed web application, no local installation is required.
+
+For the source-code version, install the project's dependencies using the package manager specified by the generated project.
+
+Example:
+
+```bash
+npm install
+```
+
+### Run
+
+```bash
+npm run dev
+```
+
+> Replace these commands if your final GitHub project uses a different setup.
+
+---
+
+# 📚 Project Documentation
+
+## 🖥️ Screenshots
+
+### 1. Potato Kudumba Unit — Home Page
+
+![Potato Kudumba Unit Home Page](screenshot-home.jpg)
+
+**Caption:** The main dashboard introduces the Potato Kudumba Unit and provides options to upload a potato photo or view the potato leaderboard.
+
+---
+
+### 2. Spud Drama Analysis Dashboard
+
+![Potato Drama Analysis Dashboard](screenshot-analysis.jpg)
+
+**Caption:** The analysis dashboard displays detected potatoes, individual trauma profiles, dramatic personalities, feature scores, and the overall Drama Score™.
+
+---
+
+### 3. Potato Photo Upload
+
+![Potato Photo Upload Interface](screenshot-upload.jpg)
+
+**Caption:** The upload interface allows users to submit a potato photo or use a sample image before running the Spud Drama analysis.
+
+---
+
+# 🔄 Workflow
+
+```text
+        ┌─────────────────────┐
+        │   Upload Potato     │
+        │       Photo         │
+        └──────────┬──────────┘
+                   │
+                   ▼
+        ┌─────────────────────┐
+        │  Pixel-Level Image  │
+        │      Analysis       │
+        └──────────┬──────────┘
+                   │
+                   ▼
+        ┌─────────────────────┐
+        │ Potato Detection &  │
+        │ Shape/Contour Scan  │
+        └──────────┬──────────┘
+                   │
+                   ▼
+       ┌────────────────────────┐
+       │ Feature Extraction     │
+       │ • Shape Irregularity   │
+       │ • Surface Roughness    │
+       │ • Visual Uniqueness    │
+       └───────────┬────────────┘
+                   │
+                   ▼
+        ┌─────────────────────┐
+        │ Drama Score™        │
+        │ Calculation         │
+        └──────────┬──────────┘
+                   │
+                   ▼
+        ┌─────────────────────┐
+        │ Dramatic Personality│
+        │   Assignment        │
+        └──────────┬──────────┘
+                   │
+                   ▼
+        ┌─────────────────────┐
+        │ Spud Drama Leaderboard│
+        └─────────────────────┘
+```
+
+**Caption:** Potato images pass through detection, geometric and visual analysis, scoring, personality assignment, and finally appear in the Spud Drama leaderboard.
+
+---
+
+# 🎭 Example Output
+
+The system can produce dramatic identities such as:
+
+| Potato | Personality | Drama Score |
+|---|---|---:|
+| Potato #2 | Quietly Unraveling | 69.8% |
+| Potato #1 | The Tragic Hero | 60.7% |
+| Potato #4 | Barely Holding On | 58.1% |
+| Potato #5 | Emotionally Stable | 57.8% |
+| Potato #3 | The Main Character | 54.7% |
+| Potato #6 | Underground Legend | 43.5% |
+
+### Potato #5 — Emotionally Stable
+
+Even after everything life has thrown at it, Potato #5 is apparently doing fine.
+
+**Shape Irregularity:** 48/100  
+**Surface Roughness:** 88/100  
+**Visual Uniqueness:** 27/100  
+**Total Drama Score:** **57.8%**
+
+---
+
+# 🎬 Project Demo Video
+
+**Demo Video:**  
+`[Add your demo video link here]`
+
+The demo demonstrates the complete workflow:
+
+**Upload Potato → Detect Spuds → Analyze Trauma → Generate Personalities → Calculate Drama Score → Rank Potatoes**
+
+---
+
+# ➕ Additional Demos
+
+- Live/deployed project: `[Add link]`
+- GitHub repository: `[Add repository link]`
+- Demo presentation: `[Add link if available]`
+
+---
+
+# 👥 Team Contributions
+
+### Muhammed Aamir
+- Project concept and overall direction
+- Web application development
+- Potato Drama analysis workflow
+- UI/UX and project presentation
+- Testing and refinement
+
+### Anton P George
+- Project development and implementation
+- Testing and debugging
+- Feature refinement
+- Documentation and presentation support
+
+> Update these contribution descriptions to match the actual work done by each member.
+
+---
+
+# 🥔 Why Potato?
+
+Because nobody asked for it.
+
+And that's exactly the point.
+
+We could have built something useful.
+
+Instead, we built a system capable of determining whether **Potato #2 is quietly unraveling**.
+
+---
+
+## 🏆 Final Verdict
+
+### **Potato Kudumba Unit™**
+
+**Because every potato deserves to be heard.**
+
+Or at least ranked.
+
+🥔  
+**May the most traumatized spud win.**
+
+---
+
+### Made with ❤️ and completely unnecessary concern for potatoes at TinkerHub Useless Projects
